@@ -2,11 +2,10 @@
 import streamlit as st
 import numpy as np
 import pickle
-import gzip
+import joblib
 
 #Load
-with gzip.open("flight_price_prediction_compressed.pkl.gz", "rb") as f:
-    model = pickle.load(f)
+model = joblib.load("flight_price_prediction_compressed.joblib")
 
 
 st.set_page_config(page_title="Price Prediction App", layout="centered")
@@ -101,6 +100,7 @@ if st.button("Predict Price 💰"):
         st.success(f"Predicted Price: ₹ {prediction:,.2f}")
     except Exception as e:
         st.error(f"Prediction failed. Model may expect a different feature encoding/shape.\nError: {e}")
+
 
 
 
