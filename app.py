@@ -12,7 +12,7 @@ st.set_page_config(page_title="Price Prediction App", layout="centered")
 st.title("🏠 Price Prediction App")
 st.write("Enter the inputs below to predict the price:")
 
-# --- Mappings for categorical fields (adjust to match your training encoding) ---
+# --- Mappings for categorical fields  ---
 airline_map = {
     "IndiGo": 0,
     "Air India": 1,
@@ -100,5 +100,6 @@ if st.button("Predict Price 💰"):
         st.success(f"Predicted Price: ₹ {prediction:,.2f}")
     except Exception as e:
         st.error(f"Prediction failed. Model may expect a different feature encoding/shape.\nError: {e}")
-# ...existing code...
+
+
 
