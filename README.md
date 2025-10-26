@@ -3,6 +3,12 @@
 This project predicts flight ticket prices using Machine Learning techniques based on factors like Airline, Source, Destination, Stops, Duration, and Class.  
 The main objective is to build a model that helps travelers estimate flight fares and assists airlines in analyzing pricing patterns.
 
+
+## 🌐 Live Demo
+
+👉 Try the app here: [https://huggingface.co/spaces/ashsus09/Flight_Price_Prediction](https://huggingface.co/spaces/ashsus09/Flight_Price_Prediction)
+
+
 ## 🚀 Features
 - Data preprocessing and feature engineering  
 - Handling missing values and encoding categorical variables  
